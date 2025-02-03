@@ -1,0 +1,26 @@
+/* Default styles */
+body {
+    background-image: linear-gradient(rgb(58, 168, 223), rgb(49, 83, 196));
+    height: 100vh; /* Background for screen */
+}
+
+/* Styles for printing */
+@media print {
+    /* Reset the body background for print */
+    body {
+        background-color: rgb(0, 0, 0); /* Or transparent if you want no background */
+    }
+
+    /* Styles for #Certificate */
+    #Certificate {
+        background-image: none;
+        color: rgb(14, 255, 98);
+        width: 100px;
+        height: 200px;
+    }
+
+    /* Optional: Hide any elements you don't want to appear in print */
+    .no-print {
+        display: none;
+    }
+}
