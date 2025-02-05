@@ -1,26 +1,51 @@
+* {
+    -webkit-print-color-adjust: exact !important;   /* Chrome, Safari 6 – 15.3, Edge */
+    color-adjust: exact !important;                 /* Firefox 48 – 96 */
+    print-color-adjust: exact !important;           /* Firefox 97+, Safari 15.4+ */
+    margin: 0%;
+}
+
+
 /* Default styles */
 body {
     background-image: linear-gradient(rgb(58, 168, 223), rgb(49, 83, 196));
-    height: 100vh; /* Background for screen */
+    height: 100vh;
+    /* Background for screen */
 }
 
 /* Styles for printing */
 @media print {
+
     /* Reset the body background for print */
     body {
-        background-color: rgb(0, 0, 0); /* Or transparent if you want no background */
+        background-color: rgb(0, 0, 0);
+        /* Or transparent if you want no background */
     }
 
     /* Styles for #Certificate */
     #Certificate {
-        background-image: none;
+        background-image: url(Certificate\ design\ 1.png);
+        background-size: 90vw;
+        /* background-color: aqua; */
         color: rgb(14, 255, 98);
-        width: 100px;
-        height: 200px;
+
+
     }
 
     /* Optional: Hide any elements you don't want to appear in print */
     .no-print {
         display: none;
     }
+}
+
+#Certificate {
+    display: flex;
+    background-image: url(Certificate\ design\ 1.png);
+    background-size: cover;
+    /* background-color: aqua; */
+    color: rgb(14, 255, 98);
+    width: 90%;
+    height: 100vh;
+
+
 }
