@@ -40,26 +40,29 @@ body {
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    background-image: url(Certificate\ design\ 1.png);
-    background-size: cover;
     /* background-color: aqua; */
     color: rgb(0, 0, 0);
     width: 100vw;
-
-
-
+    height: 772.73;
 }
 
 #Give {
-    transform: translate(60%, 84%);
-
-    height: 1275px;
+    position: absolute;
+    transform: translate(52px, 641px);
 }
 
 #Time {
-    transform: translate(220%, 84%);
+    position: absolute;
+    transform: translate(365px, 641px);
 }
 
 #Take {
-    transform: translate(270%, 84%);
+    position: absolute;
+    transform: translate(680px, 641px);
+}
+
+#Certificate>img {
+    /* position: absolute; */
+    width: 1000px;
+    height: 772.73;
 }
