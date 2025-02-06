@@ -25,9 +25,19 @@ function ReceiveButton() {
 }
 
 function SetTime() {
-    const date = Date();
-    console.log(date)
+    const date = new Date();
+
+    const month = date.getMonth() + 1
+
+    const day = date.getDay() + 2
+
+    const year = date.getFullYear()
+
+    combinedDate = month + "/" + day + "/" + year
+    console.log(combinedDate)
+    document.getElementById("Time").textContent = combinedDate
     // const dayMonthYear =
 }
 
 setInterval(SetTime, 1000)
+
