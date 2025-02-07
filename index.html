@@ -12,7 +12,7 @@
 
 <body>
     <section id="Certificate">
-        <img src="Certificate design 1.png" alt="a Certificate">
+        <img src="Certificate design 1.png" alt="a Certificate" id="leImportant">
         <h1 id="Give">
             Empty
         </h1>
@@ -23,19 +23,20 @@
             Empty
         </h1>
     </section>
-    <section id="settings">
+    <section id="settings" class="no-print">
         <section>
-            <input type="text" name="name" id="AwarderText" placeholder="Whos Giving This?">
-            <input type="button" value="Confirm Giver" onclick="AwardButton()">
+            <input class="no-print" type="text" name="name" id="AwarderText" placeholder="Whos Giving This?">
+            <input class="no-print" type="button" value="Confirm Giver" onclick="AwardButton()">
         </section>
         <section>
-            <input type="text" name="name" id="ReceiverText" placeholder="Whos Receiving This?">
-            <input type="button" value="Confirm Receiver" onclick="ReceiveButton()">
+            <input class="no-print" type="text" name="name" id="ReceiverText" placeholder="Whos Receiving This?">
+            <input class="no-print" type="button" value="Confirm Receiver" onclick="ReceiveButton()">
         </section>
         <section>
-            <input type="button" value="Design 1" onclick="C1()">
-            <input type="button" value="Design 2" onclick="C2()">
-            <input type="button" value="Design 3" onclick="C3()">
+            <input class="no-print" type="button" value="Design 1" onclick="certificateChange('Certificate design 1.png', 642, 642, 642)">
+            <input class="no-print" type="button" value="Design 2" onclick="certificateChange('Certificate design 2.png', 634, 563, 479)">
+            <input class="no-print" type="button" value="Design 3" onclick="certificateChange('Certificate design 3.png', 661, 661, 661)">
+            <input class="no-print" type="button" value="PRINT!" onclick="print()">
         </section>
 
     </section>

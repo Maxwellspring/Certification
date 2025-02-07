@@ -49,21 +49,55 @@ body {
 
 #Give {
     position: absolute;
-    transform: translate(-313px, 641px);
+    transform: translate(-313px, 642px);
 }
 
 #Time {
     position: absolute;
-    transform: translate(0px, 641px);
+    transform: translate(0px, 642px);
 }
 
 #Take {
     position: absolute;
-    transform: translate(313px, 641px);
+    transform: translate(313px, 642px);
 }
 
 #Certificate>img {
     /* position: absolute; */
     width: 1000px;
     height: 772.73;
+}
+
+#settings {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    border-radius: 8px;
+    border-width: 3px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 5px;
+    border-style: solid;
+    padding: 2px;
+    border-color: rgb(11, 166, 255);
+    background-color: rgb(26, 201, 249);
+    transition-duration: 0.1s;
+    color: black;
+}
+
+input:hover {
+    border-color: rgb(12, 127, 194);
+    background-color: rgb(19, 149, 184);
+}
+
+input:active {
+    border-color: rgb(9, 89, 135);
+    background-color: rgb(14, 106, 131);
+}
+
+input::placeholder {
+    color: black;
+    font-style: italic;
 }
